@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -56,6 +143,7 @@ html {
     min-width: 428px;
     width: 100%;
     font-size: 62.5%;
+
 }
 
 body {
@@ -63,24 +151,47 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
     font-size: 6rem;
+    color: white;
 }
 
 h3 {
     font-size: 5rem;
 }
 
-p, a {
-    font-size: 3rem;
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+    background-color: black;
+}
+
+p,
+a {
+    font-size: 2rem;
+    color: white;
+
 }
 
 /* header section */
@@ -91,7 +202,44 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+.header-nav {
+    height: 170px;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-a {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
 
 /* spacers */
 .spacer {
@@ -99,6 +247,7 @@ header {
     height: 20vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
@@ -113,6 +262,21 @@ header {
     background-color: rgb(0, 4, 17);
 }
 
+.gallery-images {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    padding: 10px 30px 20px 30px;
+    margin-left: 60px;
+}
+
+.gallery-images img {
+    width: 360px;
+    margin-bottom: 40px;
+}
+
 /* about us section */
 .about {
     width: 100%;
@@ -122,6 +286,7 @@ header {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    color: white;
 }
 
 .about-container {
@@ -159,14 +324,17 @@ header {
 
 .contact h2 {
     padding-top: 5vh;
+    color: white;
 }
 
 .contact h3 {
     padding-top: 2.5vh;
+    color: white;
 }
 
 .contact p {
     padding: .5vh 0;
+    color: white;
 }
 
 .info {
@@ -194,51 +362,75 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.footer-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#footer-text {
+    padding-top: 25px;
+    font-size: 1.5rem;
+}
+
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+
 
     /* gallery section */
     .gallery {
         height: auto;
     }
-    
+
     /* about us section */
 
     .about {
         height: 200vh;
     }
-    
+
     .about h2 {
         width: 100%;
         padding-top: 5vh;
     }
-    
+
     .about-container .text {
         width: 85%;
     }
-    
+
     /* contact us section */
     .contact h3 {
         padding-top: 2.5vh;
     }
-    
+
     .info {
         flex-wrap: wrap;
     }
-    
+
     .address {
         width: 100%;
         padding-bottom: 2.5vh;
     }
-    
+
     .hours {
         width: 100%;
     }
-    
+
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
